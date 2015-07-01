@@ -1,0 +1,77 @@
+10
+
+dir
+22
+http://code.taobao.org/svn/cloud-cobar/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt
+http://code.taobao.org/svn/cloud-cobar
+
+
+
+2014-06-16T08:09:40.750626Z
+5
+udukwilliam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93eea52b-0f9c-42a8-873e-f41f3d3f636d
+
+dal
+dir
+
+ddl
+dir
+
+mts
+dir
+
+SQLStatement.java
+file
+
+
+
+
+2015-02-11T08:32:00.000000Z
+af2392f939e5c3a585697106d7d167c1
+2014-06-16T08:09:40.750626Z
+5
+udukwilliam
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1151
+
+dml
+dir
+
+extension
+dir
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/cloud-cobar/!svn/ver/21/trunk/cobar-build
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cloud-cobar/!svn/ver/12/trunk/cobar-build/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/build.xml
+END

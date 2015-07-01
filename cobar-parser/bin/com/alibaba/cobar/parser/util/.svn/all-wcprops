@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util
+END
+ParseString.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/ParseString.java
+END
+UnaryOperandCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/UnaryOperandCalculator.java
+END
+CharTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/CharTypes.java
+END
+BinaryOperandCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/BinaryOperandCalculator.java
+END
+ExprEvalUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/ExprEvalUtils.java
+END
+ParseUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/ParseUtil.java
+END
+ListUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/ListUtil.java
+END
+PairUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/PairUtil.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/Pair.java
+END
+ArrayUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/util/ArrayUtil.java
+END

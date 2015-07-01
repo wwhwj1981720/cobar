@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cloud-cobar/!svn/ver/21/trunk/cobar-build/resources/server/bin
+END
+shutdown.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/bin/shutdown.sh
+END
+startup.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cloud-cobar/!svn/ver/21/trunk/cobar-build/resources/server/bin/startup.bat
+END
+startup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/bin/startup.sh
+END
+restart.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/bin/restart.sh
+END

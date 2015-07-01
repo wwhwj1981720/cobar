@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal
+END
+ShowMasterStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowMasterStatus.java
+END
+ShowIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowIndex.java
+END
+ShowVariables.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowVariables.java
+END
+ShowProcesslist.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowProcesslist.java
+END
+ShowBinLogEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowBinLogEvent.java
+END
+ShowErrors.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowErrors.java
+END
+ShowProcedureCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowProcedureCode.java
+END
+DALShowStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/DALShowStatement.java
+END
+ShowBinaryLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowBinaryLog.java
+END
+ShowEngines.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowEngines.java
+END
+ShowWarnings.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowWarnings.java
+END
+ShowFunctionStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowFunctionStatus.java
+END
+DALSetCharacterSetStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/DALSetCharacterSetStatement.java
+END
+ShowSlaveHosts.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowSlaveHosts.java
+END
+ShowTableStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowTableStatus.java
+END
+ShowGrants.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowGrants.java
+END
+ShowProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowProfile.java
+END
+DALSetStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/DALSetStatement.java
+END
+ShowCreate.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowCreate.java
+END
+ShowEvents.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowEvents.java
+END
+ShowCharaterSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowCharaterSet.java
+END
+ShowEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowEngine.java
+END
+ShowPrivileges.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowPrivileges.java
+END
+ShowTables.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowTables.java
+END
+ShowSlaveStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowSlaveStatus.java
+END
+ShowFunctionCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowFunctionCode.java
+END
+ShowColumns.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowColumns.java
+END
+ShowPlugins.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowPlugins.java
+END
+ShowProfiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowProfiles.java
+END
+ShowStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowStatus.java
+END
+DALSetNamesStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/DALSetNamesStatement.java
+END
+ShowCollation.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowCollation.java
+END
+ShowAuthors.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowAuthors.java
+END
+ShowTriggers.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowTriggers.java
+END
+ShowDatabases.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowDatabases.java
+END
+ShowProcedureStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowProcedureStatus.java
+END
+ShowOpenTables.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowOpenTables.java
+END
+ShowContributors.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dal/ShowContributors.java
+END

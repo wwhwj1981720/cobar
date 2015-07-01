@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config
+END
+Alarms.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/Alarms.java
+END
+ErrorCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/ErrorCode.java
+END
+Isolations.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/Isolations.java
+END
+Versions.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/Versions.java
+END
+Capabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/Capabilities.java
+END

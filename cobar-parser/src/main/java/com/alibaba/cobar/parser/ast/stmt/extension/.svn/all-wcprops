@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/extension
+END
+ExtDDLCreatePolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/extension/ExtDDLCreatePolicy.java
+END
+ExtDDLDropPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/extension/ExtDDLDropPolicy.java
+END

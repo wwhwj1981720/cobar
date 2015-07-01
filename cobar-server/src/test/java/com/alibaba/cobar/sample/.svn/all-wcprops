@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample
+END
+SampleConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleConnection.java
+END
+SampleStartup.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleStartup.java
+END
+SampleQueryHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleQueryHandler.java
+END
+SampleConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleConfig.java
+END
+SampleServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleServer.java
+END
+SampleConnectionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleConnectionFactory.java
+END
+SamplePrivileges.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SamplePrivileges.java
+END
+SampleResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/sample/SampleResponseHandler.java
+END

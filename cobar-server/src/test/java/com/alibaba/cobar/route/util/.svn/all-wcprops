@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/route/util
+END
+PartitionForSingle.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/route/util/PartitionForSingle.java
+END
+PermutationUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/route/util/PermutationUtilTest.java
+END
+PartitionUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/route/util/PartitionUtilTest.java
+END

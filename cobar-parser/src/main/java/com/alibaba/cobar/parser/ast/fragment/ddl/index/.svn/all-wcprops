@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl/index
+END
+IndexDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl/index/IndexDefinition.java
+END
+IndexOption.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl/index/IndexOption.java
+END
+IndexColumnName.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl/index/IndexColumnName.java
+END

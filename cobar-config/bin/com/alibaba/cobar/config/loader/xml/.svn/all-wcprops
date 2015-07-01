@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/loader/xml
+END
+XMLRuleLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/loader/xml/XMLRuleLoader.java
+END
+XMLSchemaLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/loader/xml/XMLSchemaLoader.java
+END
+XMLConfigLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/loader/xml/XMLConfigLoader.java
+END
+XMLServerLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/loader/xml/XMLServerLoader.java
+END

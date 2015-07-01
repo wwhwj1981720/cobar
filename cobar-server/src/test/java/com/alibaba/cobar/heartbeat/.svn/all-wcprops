@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/heartbeat
+END
+HeartbeatStartup.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/heartbeat/HeartbeatStartup.java
+END
+HeartbeatContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/heartbeat/HeartbeatContext.java
+END
+HeartbeatConfigForTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/heartbeat/HeartbeatConfigForTest.java
+END

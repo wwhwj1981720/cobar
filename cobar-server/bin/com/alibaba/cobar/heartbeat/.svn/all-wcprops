@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat
+END
+MySQLDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/MySQLDetector.java
+END
+CobarDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/CobarDetector.java
+END
+MySQLHeartbeat.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/MySQLHeartbeat.java
+END
+CobarHeartbeat.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/CobarHeartbeat.java
+END
+MySQLDetectorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/MySQLDetectorFactory.java
+END
+CobarDetectorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/CobarDetectorFactory.java
+END
+MySQLDetectorAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/MySQLDetectorAuthenticator.java
+END
+CobarDetectorAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/CobarDetectorAuthenticator.java
+END
+MySQLDetectorHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/MySQLDetectorHandler.java
+END
+CobarDetectorHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/heartbeat/CobarDetectorHandler.java
+END

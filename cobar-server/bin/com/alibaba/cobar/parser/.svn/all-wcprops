@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser
+END
+ServerParserTestPerf.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/ServerParserTestPerf.java
+END
+Performance.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/Performance.java
+END
+ServerParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/ServerParserTest.java
+END
+ManagerParserTestPerf.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/ManagerParserTestPerf.java
+END
+ManagerParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/ManagerParserTest.java
+END

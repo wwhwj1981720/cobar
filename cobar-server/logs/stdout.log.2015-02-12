@@ -1,0 +1,25 @@
+14:46:04,750 INFO  ===============================================
+14:46:04,765 INFO  Cobar is ready to startup ...
+14:46:04,765 INFO  Startup processors ...
+14:46:05,265 INFO  Startup connector ...
+14:46:05,265 INFO  Initialize dataNodes ...
+14:46:05,468 INFO  dnTest1:0 init success
+14:46:05,468 INFO  dnTest3:0 init success
+14:46:05,484 INFO  dnTest2:0 init success
+14:46:05,500 INFO  CobarManager is started and listening on 9066
+14:46:05,515 INFO  CobarServer is started and listening on 8066
+14:46:05,515 INFO  ===============================================
+14:48:37,734 ERROR [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=2247,schema=null]Access denied for user 'test'
+14:48:43,234 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=2247,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+14:49:23,171 ERROR [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=2255,schema=null]Access denied for user 'test'
+14:49:23,718 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=2255,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)

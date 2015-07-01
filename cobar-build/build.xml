@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="cobar-build" default="build" basedir=".">
+
+	<property file="build/build.properties" />
+
+	<property name="unit-resource.path" value="resources" />
+	
+	<property name="unit-export.path"   value="export" />
+	<property name="unit-export.path.server"   value="${unit-export.path}/server" />
+	<property name="unit-export.path.driver"   value="${unit-export.path}/driver" />
+	<property name="unit-export.path.manager"  value="${unit-export.path}/manager" />
+	
+	<property name="libs-export.path.server"   value="${unit-export.path.server}/lib" />
+	<property name="libs-export.path.driver"   value="${unit-export.path.driver}/lib" />
+	<property name="libs-export.path.manager"  value="${unit-export.path.manager}/lib"/>
+
+	<!-- ***********************************server构建********************************************** -->
+	<!-- 清理导出目录 初始化构建环境 -->
+	<target name="init-server">
+		<echo message="构建Server开始" />
+		
+		<delete dir="${unit-export.path.server}" />
+		<delete dir="${unit-resource.path}/server/jars">
+			<include name="*.*"/>
+		</delete>
+		
+		<mkdir dir="${unit-resource.path}" />
+		<mkdir dir="${unit-export.path.server}" />
+		<mkdir dir="${libs-export.path.server}" />
+	</target>
+
+	<!-- 构建各个工程的jar包 -->
+	<target name="build-server-jars">
+		<echo message="Build JAR" />
+		<ant antfile="build.xml" dir="../cobar-common/build" />
+		<ant antfile="build.xml" dir="../cobar-config/build" />
+		<ant antfile="build.xml" dir="../cobar-net/build" />
+		<ant antfile="build.xml" dir="../cobar-parser/build" />
+		<ant antfile="build.xml" dir="../cobar-route/build" />  
+		<ant antfile="build.xml" dir="../cobar-server/build" />
+	</target>
+
+	<!--移动拷贝资源-->
+	<target name="copy-sever-resources">
+		<!-- 1. 移动各种固定的配置 -->
+		<copy todir="${unit-export.path.server}" includeemptydirs="true" encoding="UTF-8">
+			<fileset dir="${unit-resource.path}/server" >
+				<include name="bin/**/*" />
+				<include name="conf/**/*" />
+				<include name="logs" />
+			</fileset>
+		</copy>
+		
+		<!-- 2. 移动jars下的jar到 export/lib目录下 -->
+		<move todir="${libs-export.path.server}" encoding="UTF-8">
+			<fileset file="${unit-resource.path}/server/jars/*.jar" />
+		</move>
+	</target>
+	
+	<!--打包server-->
+	<target name="build-server-zip">
+		<echo message="Compress to zip" />
+		
+		<zip destfile="${unit-export.path.server}/cobar-server-${version}-${product.release.type}${product.release.date}.zip">
+			<fileset dir="${unit-export.path.server}" />
+		</zip>
+		
+		<delete dir="${unit-export.path.server}" includeemptydirs="true">
+			<exclude name="cobar-server*.zip" />
+		</delete>
+		
+		<echo message="构建Server完成" />
+	</target>
+	
+	<!-- ***********************************driver构建********************************************** -->
+	
+	<!-- 清理导出目录 初始化构建环境 -->
+	<target name="init-driver">
+		<echo message="构建driver开始" />
+		
+		<delete dir="${unit-export.path.driver}" />
+		<delete dir="${unit-resource.path}/driver/jars">
+			<include name="*.*"/>
+		</delete>
+		
+		<mkdir dir="${unit-resource.path}" />
+		<mkdir dir="${unit-export.path.driver}" />
+		<mkdir dir="${libs-export.path.driver}" />
+	</target>
+
+	<!-- 构建各个工程的jar包 -->
+	<target name="build-driver-jars">
+		<echo message="Build JAR" />
+		<ant antfile="build.xml" dir="../cobar-driver/build" />
+	</target>
+
+	<!--移动拷贝资源-->
+	<target name="copy-driver-resources">
+		<!-- 1. 移动jars下的jar到 export/lib目录下 -->
+		<move todir="${libs-export.path.driver}" encoding="UTF-8">
+			<fileset file="${unit-resource.path}/driver/jars/*.jar" />
+		</move>
+	</target>
+		
+	<!--打包driver-->
+	<target name="build-driver-zip">
+		<echo message="Compress to zip" />
+		
+		<zip destfile="${unit-export.path.driver}/cobar-driver-${version}-${product.release.type}${product.release.date}.zip">
+			<fileset dir="${unit-export.path.driver}" />
+		</zip>
+		
+		<delete dir="${unit-export.path.driver}" includeemptydirs="true">
+			<exclude name="cobar-driver*.zip" />
+		</delete>
+		
+		<echo message="构建driver完成" />
+	</target>
+	
+	<!-- ***********************************manager构建********************************************** -->
+
+	<target name="build">
+		<ant target="init-server" />
+		<ant target="build-server-jars" />
+		<ant target="copy-sever-resources" />
+		<ant target="build-server-zip" />
+		
+		<ant target="init-driver" />
+		<ant target="build-driver-jars" />
+		<ant target="copy-driver-resources" />
+		<ant target="build-driver-zip" />
+	</target>
+</project>

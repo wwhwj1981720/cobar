@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info
+END
+RowCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/RowCount.java
+END
+Coercibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/Coercibility.java
+END
+CurrentUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/CurrentUser.java
+END
+Collation.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/Collation.java
+END
+Database.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/Database.java
+END
+LastInsertId.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/LastInsertId.java
+END
+Version.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/Version.java
+END
+FoundRows.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/FoundRows.java
+END
+Charset.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/Charset.java
+END
+Benchmark.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/Benchmark.java
+END
+ConnectionId.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/ConnectionId.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/function/info/User.java
+END

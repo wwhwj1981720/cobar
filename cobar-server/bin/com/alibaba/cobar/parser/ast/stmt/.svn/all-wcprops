@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/ast/stmt
+END
+StubDMLSelectStatementCreater.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/ast/stmt/StubDMLSelectStatementCreater.java
+END

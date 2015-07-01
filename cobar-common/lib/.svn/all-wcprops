@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/cloud-cobar/!svn/ver/11/trunk/cobar-common/lib
+END
+slf4j-log4j12-1.5.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cloud-cobar/!svn/ver/11/trunk/cobar-common/lib/slf4j-log4j12-1.5.6.jar
+END
+slf4j-api-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cloud-cobar/!svn/ver/11/trunk/cobar-common/lib/slf4j-api-1.6.1.jar
+END
+mysql-connector-java-5.1.22.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cloud-cobar/!svn/ver/11/trunk/cobar-common/lib/mysql-connector-java-5.1.22.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cloud-cobar/!svn/ver/11/trunk/cobar-common/lib/log4j-1.2.16.jar
+END

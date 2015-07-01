@@ -1,0 +1,11 @@
+21:58:56,046 ERROR #!Cobar#dnTest1 init failure
+21:58:56,046 ERROR #!Cobar#dnTest3 init failure
+21:58:56,046 ERROR #!Cobar#dnTest2 init failure
+22:00:14,593 ERROR #!Cobar#dnTest1 init failure
+22:00:14,593 ERROR #!Cobar#dnTest3 init failure
+22:00:14,593 ERROR #!Cobar#dnTest2 init failure
+22:04:30,453 ERROR #!Cobar#dnTest1 init failure
+22:04:30,453 ERROR #!Cobar#dnTest3 init failure
+22:04:30,453 ERROR #!Cobar#dnTest2 init failure
+22:15:13,578 ERROR #!CLUSTER_EMPTY#[thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=4333,schema=dbtest]
+22:19:32,921 ERROR #!CLUSTER_EMPTY#[thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4358,schema=dbtest]

@@ -1,0 +1,511 @@
+21:58:55,828 INFO  ===============================================
+21:58:55,828 INFO  Cobar is ready to startup ...
+21:58:55,828 INFO  Startup processors ...
+21:58:56,015 INFO  Startup connector ...
+21:58:56,015 INFO  Initialize dataNodes ...
+21:58:56,046 WARN  dnTest1:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+21:58:56,046 ERROR #!Cobar#dnTest1 init failure
+21:58:56,046 WARN  dnTest3:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+21:58:56,046 ERROR #!Cobar#dnTest3 init failure
+21:58:56,046 WARN  dnTest2:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+21:58:56,046 ERROR #!Cobar#dnTest2 init failure
+21:58:56,062 INFO  CobarManager is started and listening on 9066
+21:58:56,062 INFO  CobarServer is started and listening on 8066
+21:58:56,062 INFO  ===============================================
+22:00:14,406 INFO  ===============================================
+22:00:14,406 INFO  Cobar is ready to startup ...
+22:00:14,406 INFO  Startup processors ...
+22:00:14,562 INFO  Startup connector ...
+22:00:14,578 INFO  Initialize dataNodes ...
+22:00:14,593 WARN  dnTest1:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+22:00:14,593 ERROR #!Cobar#dnTest1 init failure
+22:00:14,593 WARN  dnTest3:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+22:00:14,593 ERROR #!Cobar#dnTest3 init failure
+22:00:14,593 WARN  dnTest2:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+22:00:14,593 ERROR #!Cobar#dnTest2 init failure
+22:00:14,609 INFO  CobarManager is started and listening on 9066
+22:00:14,609 INFO  CobarServer is started and listening on 8066
+22:00:14,609 INFO  ===============================================
+22:04:30,218 INFO  ===============================================
+22:04:30,218 INFO  Cobar is ready to startup ...
+22:04:30,218 INFO  Startup processors ...
+22:04:30,421 INFO  Startup connector ...
+22:04:30,421 INFO  Initialize dataNodes ...
+22:04:30,453 WARN  dnTest1:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+22:04:30,453 ERROR #!Cobar#dnTest1 init failure
+22:04:30,453 WARN  dnTest3:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+22:04:30,453 ERROR #!Cobar#dnTest3 init failure
+22:04:30,453 WARN  dnTest2:0 init error.
+java.util.concurrent.ExecutionException: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+Caused by: com.alibaba.cobar.exception.ErrorPacketException: Access denied for user 'test'@'localhost' (using password: YES)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.handshake(MySQLChannel.java:350)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.access$0(MySQLChannel.java:320)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:181)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel$1.call(MySQLChannel.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+22:04:30,453 ERROR #!Cobar#dnTest2 init failure
+22:04:30,468 INFO  CobarManager is started and listening on 9066
+22:04:30,468 INFO  CobarServer is started and listening on 8066
+22:04:30,468 INFO  ===============================================
+22:05:43,734 INFO  ===============================================
+22:05:43,734 INFO  Cobar is ready to startup ...
+22:05:43,734 INFO  Startup processors ...
+22:05:43,953 INFO  Startup connector ...
+22:05:43,953 INFO  Initialize dataNodes ...
+22:05:43,984 INFO  dnTest1:0 init success
+22:05:44,000 INFO  dnTest3:0 init success
+22:05:44,000 INFO  dnTest2:0 init success
+22:05:44,015 INFO  CobarManager is started and listening on 9066
+22:05:44,015 INFO  CobarServer is started and listening on 8066
+22:05:44,015 INFO  ===============================================
+22:06:26,968 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]'root' login success
+22:06:27,000 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]/* mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+22:06:27,046 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]/* mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+22:06:27,078 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]SHOW WARNINGS
+22:06:27,078 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+22:06:27,093 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]SHOW COLLATION
+22:06:27,093 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+22:06:27,109 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]SET character_set_results = NULL
+22:06:27,109 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]SET autocommit=1
+22:06:27,109 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]insert into tb2 values(id,val) values (1,'part1')
+22:06:27,125 WARN  [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]insert into tb2 values(id,val) values (1,'part1')
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; Error occurs around this fragment: {s(id,val) values (1,'part1}. Error cause: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:155)
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:160)
+	at com.alibaba.cobar.route.ServerRouter.route(ServerRouter.java:98)
+	at com.alibaba.cobar.server.ServerConnection.execute(ServerConnection.java:148)
+	at com.alibaba.cobar.server.ServerQueryHandler.query(ServerQueryHandler.java:91)
+	at com.alibaba.cobar.net.FrontendConnection.query(FrontendConnection.java:267)
+	at com.alibaba.cobar.net.mysql.handler.FrontendCommandHandler.handle(FrontendCommandHandler.java:48)
+	at com.alibaba.cobar.net.FrontendConnection$1.run(FrontendConnection.java:373)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.sql.SQLSyntaxErrorException: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:150)
+	... 10 more
+22:06:27,187 WARN  [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4303,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:07:23,046 INFO  ===============================================
+22:07:23,046 INFO  Cobar is ready to startup ...
+22:07:23,046 INFO  Startup processors ...
+22:07:23,250 INFO  Startup connector ...
+22:07:23,250 INFO  Initialize dataNodes ...
+22:07:23,281 INFO  dnTest1:0 init success
+22:07:23,281 INFO  dnTest3:0 init success
+22:07:23,281 INFO  dnTest2:0 init success
+22:07:23,296 INFO  CobarManager is started and listening on 9066
+22:07:23,296 INFO  CobarServer is started and listening on 8066
+22:07:23,296 INFO  ===============================================
+22:07:30,609 ERROR [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4321,schema=null]Access denied for user 'root'
+22:07:30,625 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4321,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:10:51,390 ERROR [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=4325,schema=null]Access denied for user 'test'
+22:10:51,406 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=4325,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:12:59,734 ERROR [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=4330,schema=null]Access denied for user 'test'
+22:12:59,734 DEBUG [thread=Processor3-R,class=ServerConnection,host=127.0.0.1,port=4330,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:15:13,515 INFO  [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=4333,schema=dbtest]'root' login success,extra:1.0.0
+22:15:13,515 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=4333,schema=dbtest]SHOW COBAR_CLUSTER
+22:15:13,578 ERROR #!CLUSTER_EMPTY#[thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=4333,schema=dbtest]
+22:15:13,578 DEBUG [thread=Processor0-R,class=ServerConnection,host=127.0.0.1,port=4333,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:19:13,578 INFO  ===============================================
+22:19:13,578 INFO  Cobar is ready to startup ...
+22:19:13,578 INFO  Startup processors ...
+22:19:13,750 INFO  Startup connector ...
+22:19:13,765 INFO  Initialize dataNodes ...
+22:19:13,781 INFO  dnTest1:0 init success
+22:19:13,781 INFO  dnTest3:0 init success
+22:19:13,781 INFO  dnTest2:0 init success
+22:19:13,796 INFO  CobarManager is started and listening on 9066
+22:19:13,796 INFO  CobarServer is started and listening on 8066
+22:19:13,796 INFO  ===============================================
+22:19:32,921 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4358,schema=dbtest]'root' login success,extra:1.0.0
+22:19:32,921 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4358,schema=dbtest]SHOW COBAR_CLUSTER
+22:19:32,921 ERROR #!CLUSTER_EMPTY#[thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4358,schema=dbtest]
+22:19:32,937 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4358,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:22:39,515 INFO  ===============================================
+22:22:39,515 INFO  Cobar is ready to startup ...
+22:22:39,515 INFO  Startup processors ...
+22:22:39,859 INFO  Startup connector ...
+22:22:39,875 INFO  Initialize dataNodes ...
+22:22:39,906 INFO  dnTest1:0 init success
+22:22:39,906 INFO  dnTest3:0 init success
+22:22:39,906 INFO  dnTest2:0 init success
+22:22:39,937 INFO  CobarManager is started and listening on 9066
+22:22:39,937 INFO  CobarServer is started and listening on 8066
+22:22:39,937 INFO  ===============================================
+22:24:24,859 WARN  [thread=TimerExecutor1,class=ServerConnection,host=127.0.0.1,port=4405,schema=null] idle timeout
+22:25:44,296 WARN  [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4405,schema=null]
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:113)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:156)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:39:23,765 INFO  [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]'root' login success
+22:39:32,609 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+22:39:32,703 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+22:39:35,328 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]SHOW WARNINGS
+22:39:35,328 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+22:39:36,843 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+22:39:36,859 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+22:39:38,109 DEBUG [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]SHOW COLLATION
+22:39:38,109 DEBUG [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+22:39:39,062 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]SET character_set_results = NULL
+22:39:40,078 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]SET autocommit=1
+22:39:41,375 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]insert into tb2 values(id,val) values (2,'part1'),(512,'part2')
+22:39:41,390 WARN  [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]insert into tb2 values(id,val) values (2,'part1'),(512,'part2')
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; Error occurs around this fragment: {s(id,val) values (2,'part1}. Error cause: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:155)
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:160)
+	at com.alibaba.cobar.route.ServerRouter.route(ServerRouter.java:98)
+	at com.alibaba.cobar.server.ServerConnection.execute(ServerConnection.java:148)
+	at com.alibaba.cobar.server.ServerQueryHandler.query(ServerQueryHandler.java:91)
+	at com.alibaba.cobar.net.FrontendConnection.query(FrontendConnection.java:267)
+	at com.alibaba.cobar.net.mysql.handler.FrontendCommandHandler.handle(FrontendCommandHandler.java:48)
+	at com.alibaba.cobar.net.FrontendConnection$1.run(FrontendConnection.java:373)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.sql.SQLSyntaxErrorException: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:150)
+	... 10 more
+22:39:41,562 WARN  [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=4816,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:40:40,078 INFO  ===============================================
+22:40:40,078 INFO  Cobar is ready to startup ...
+22:40:40,078 INFO  Startup processors ...
+22:40:40,265 INFO  Startup connector ...
+22:40:40,281 INFO  Initialize dataNodes ...
+22:40:40,296 INFO  dnTest1:0 init success
+22:40:40,296 INFO  dnTest3:0 init success
+22:40:40,296 INFO  dnTest2:0 init success
+22:40:40,312 INFO  CobarManager is started and listening on 9066
+22:40:40,312 INFO  CobarServer is started and listening on 8066
+22:40:40,312 INFO  ===============================================
+22:40:52,187 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]'root' login success
+22:40:52,187 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+22:40:52,250 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+22:40:52,296 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]SHOW WARNINGS
+22:40:52,296 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+22:40:52,296 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+22:40:52,312 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+22:40:52,312 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]SHOW COLLATION
+22:40:52,312 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+22:40:52,328 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]SET character_set_results = NULL
+22:40:52,328 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]SET autocommit=1
+22:40:52,328 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]insert into tb2 values(id,val) values (2,'part1'),(512,'part2')
+22:40:52,343 WARN  [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]insert into tb2 values(id,val) values (2,'part1'),(512,'part2')
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; Error occurs around this fragment: {s(id,val) values (2,'part1}. Error cause: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:155)
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:160)
+	at com.alibaba.cobar.route.ServerRouter.route(ServerRouter.java:98)
+	at com.alibaba.cobar.server.ServerConnection.execute(ServerConnection.java:148)
+	at com.alibaba.cobar.server.ServerQueryHandler.query(ServerQueryHandler.java:91)
+	at com.alibaba.cobar.net.FrontendConnection.query(FrontendConnection.java:267)
+	at com.alibaba.cobar.net.mysql.handler.FrontendCommandHandler.handle(FrontendCommandHandler.java:48)
+	at com.alibaba.cobar.net.FrontendConnection$1.run(FrontendConnection.java:373)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.sql.SQLSyntaxErrorException: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:150)
+	... 10 more
+22:40:52,390 WARN  [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4842,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+22:43:27,390 INFO  ===============================================
+22:43:27,390 INFO  Cobar is ready to startup ...
+22:43:27,390 INFO  Startup processors ...
+22:43:27,562 INFO  Startup connector ...
+22:43:27,562 INFO  Initialize dataNodes ...
+22:43:27,593 INFO  dnTest1:0 init success
+22:43:27,593 INFO  dnTest3:0 init success
+22:43:27,593 INFO  dnTest2:0 init success
+22:43:27,609 INFO  CobarManager is started and listening on 9066
+22:43:27,609 INFO  CobarServer is started and listening on 8066
+22:43:27,609 INFO  ===============================================
+22:43:33,343 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]'root' login success
+22:43:33,343 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+22:43:33,390 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+22:43:33,421 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]SHOW WARNINGS
+22:43:33,421 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+22:43:33,421 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+22:43:33,437 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+22:43:33,437 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]SHOW COLLATION
+22:43:33,437 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+22:43:33,453 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]SET character_set_results = NULL
+22:43:33,453 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]SET autocommit=1
+22:43:33,453 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]insert into tb2 values(id,val) values (2,'part1')
+22:43:33,468 WARN  [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]insert into tb2 values(id,val) values (2,'part1')
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; Error occurs around this fragment: {s(id,val) values (2,'part1}. Error cause: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:155)
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:160)
+	at com.alibaba.cobar.route.ServerRouter.route(ServerRouter.java:98)
+	at com.alibaba.cobar.server.ServerConnection.execute(ServerConnection.java:148)
+	at com.alibaba.cobar.server.ServerQueryHandler.query(ServerQueryHandler.java:91)
+	at com.alibaba.cobar.net.FrontendConnection.query(FrontendConnection.java:267)
+	at com.alibaba.cobar.net.mysql.handler.FrontendCommandHandler.handle(FrontendCommandHandler.java:48)
+	at com.alibaba.cobar.net.FrontendConnection$1.run(FrontendConnection.java:373)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.sql.SQLSyntaxErrorException: SQL syntax error!
+	at com.alibaba.cobar.parser.recognizer.SQLParserDelegate.parse(SQLParserDelegate.java:150)
+	... 10 more
+22:43:33,484 WARN  [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)

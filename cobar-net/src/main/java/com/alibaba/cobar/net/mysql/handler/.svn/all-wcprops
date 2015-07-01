@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/handler
+END
+FrontendAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/handler/FrontendAuthenticator.java
+END
+FrontendCommandHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/handler/FrontendCommandHandler.java
+END

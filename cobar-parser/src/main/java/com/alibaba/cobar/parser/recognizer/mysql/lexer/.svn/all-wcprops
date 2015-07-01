@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/recognizer/mysql/lexer
+END
+MySQLLexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/recognizer/mysql/lexer/MySQLLexer.java
+END
+MySQLKeywords.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/recognizer/mysql/lexer/MySQLKeywords.java
+END

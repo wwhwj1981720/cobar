@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception
+END
+ErrorPacketException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception/ErrorPacketException.java
+END
+UnknownPacketException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception/UnknownPacketException.java
+END
+UnknownCharsetException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception/UnknownCharsetException.java
+END
+UnknownTxIsolationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception/UnknownTxIsolationException.java
+END
+HeartbeatException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception/HeartbeatException.java
+END
+UnknownDataNodeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/exception/UnknownDataNodeException.java
+END

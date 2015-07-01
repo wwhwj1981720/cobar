@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/factory
+END
+BackendConnectionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/factory/BackendConnectionFactory.java
+END
+FrontendConnectionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/factory/FrontendConnectionFactory.java
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary
+END
+DefaultValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/DefaultValue.java
+END
+Identifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/Identifier.java
+END
+ParamMarker.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/ParamMarker.java
+END
+PlaceHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/PlaceHolder.java
+END
+ExistsPrimary.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/ExistsPrimary.java
+END
+PrimaryExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/PrimaryExpression.java
+END
+UsrDefVarPrimary.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/UsrDefVarPrimary.java
+END
+VariableExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/VariableExpression.java
+END
+RowExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/RowExpression.java
+END
+CaseWhenOperatorExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/CaseWhenOperatorExpression.java
+END
+Wildcard.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/Wildcard.java
+END
+SysVarPrimary.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/SysVarPrimary.java
+END
+MatchExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/primary/MatchExpression.java
+END

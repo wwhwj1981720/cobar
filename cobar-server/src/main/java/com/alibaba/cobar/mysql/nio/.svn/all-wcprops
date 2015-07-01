@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/nio
+END
+MySQLConnectionPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/nio/MySQLConnectionPool.java
+END
+MySQLConnectionAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/nio/MySQLConnectionAuthenticator.java
+END
+MySQLConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/nio/MySQLConnectionHandler.java
+END
+MySQLConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/nio/MySQLConnection.java
+END
+MySQLConnectionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/nio/MySQLConnectionFactory.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/rule
+END
+TableRuleConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/rule/TableRuleConfig.java
+END
+RuleConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/rule/RuleConfig.java
+END
+RuleAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/rule/RuleAlgorithm.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model
+END
+DataSourceConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/DataSourceConfig.java
+END
+CobarNodeConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/CobarNodeConfig.java
+END
+UserConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/UserConfig.java
+END
+DataNodeConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/DataNodeConfig.java
+END
+SchemaConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/SchemaConfig.java
+END
+ClusterConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/ClusterConfig.java
+END
+SystemConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/SystemConfig.java
+END
+QuarantineConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/QuarantineConfig.java
+END
+TableConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/9/trunk/cobar-config/src/main/java/com/alibaba/cobar/config/model/TableConfig.java
+END

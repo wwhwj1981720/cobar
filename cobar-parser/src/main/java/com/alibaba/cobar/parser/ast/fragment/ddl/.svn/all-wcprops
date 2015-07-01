@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl
+END
+TableOptions.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl/TableOptions.java
+END
+ColumnDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/ddl/ColumnDefinition.java
+END

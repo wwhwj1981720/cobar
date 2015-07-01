@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response
+END
+Heartbeat.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/Heartbeat.java
+END
+SelectDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/SelectDatabase.java
+END
+SelectLastInsertId.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/SelectLastInsertId.java
+END
+SelectVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/SelectVersion.java
+END
+CharacterSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/CharacterSet.java
+END
+SelectVersionComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/SelectVersionComment.java
+END
+ShowDatabases.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/ShowDatabases.java
+END
+PreparedStmtResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/PreparedStmtResponse.java
+END
+SelectIdentity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/SelectIdentity.java
+END
+ShowCobarCluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/ShowCobarCluster.java
+END
+ShowCobarStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/ShowCobarStatus.java
+END
+Ping.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/Ping.java
+END
+SelectUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/SelectUser.java
+END
+ShowDataSources.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/server/response/ShowDataSources.java
+END

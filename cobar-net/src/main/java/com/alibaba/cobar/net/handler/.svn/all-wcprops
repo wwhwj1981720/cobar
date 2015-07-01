@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/handler
+END
+BackendAsyncHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/handler/BackendAsyncHandler.java
+END
+FrontendQueryHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/handler/FrontendQueryHandler.java
+END
+FrontendPrivileges.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/handler/FrontendPrivileges.java
+END
+FrontendPrepareHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/handler/FrontendPrepareHandler.java
+END

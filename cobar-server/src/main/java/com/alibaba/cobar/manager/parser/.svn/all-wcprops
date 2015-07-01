@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser
+END
+ManagerParseRollback.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseRollback.java
+END
+ManagerParseKill.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseKill.java
+END
+ManagerParse.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParse.java
+END
+ManagerParseSelect.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseSelect.java
+END
+ManagerParseShow.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseShow.java
+END
+ManagerParseSwitch.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseSwitch.java
+END
+ManagerParseStop.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseStop.java
+END
+ManagerParseClear.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseClear.java
+END
+ManagerParseReload.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/manager/parser/ManagerParseReload.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml
+END
+DMLSelectStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLSelectStatement.java
+END
+DMLStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLStatement.java
+END
+DMLInsertReplaceStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLInsertReplaceStatement.java
+END
+DMLDeleteStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLDeleteStatement.java
+END
+DMLUpdateStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLUpdateStatement.java
+END
+DMLInsertStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLInsertStatement.java
+END
+DMLQueryStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLQueryStatement.java
+END
+DMLSelectUnionStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLSelectUnionStatement.java
+END
+DMLCallStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLCallStatement.java
+END
+DMLReplaceStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/dml/DMLReplaceStatement.java
+END

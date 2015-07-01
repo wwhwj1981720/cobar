@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment
+END
+VariableScope.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/VariableScope.java
+END
+SortOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/SortOrder.java
+END
+OrderBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/OrderBy.java
+END
+GroupBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/GroupBy.java
+END
+Limit.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/Limit.java
+END

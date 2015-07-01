@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql
+END
+OkPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/OkPacket.java
+END
+EOFPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/EOFPacket.java
+END
+CommandPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/CommandPacket.java
+END
+QuitPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/QuitPacket.java
+END
+Reply323Packet.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/Reply323Packet.java
+END
+FieldPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/FieldPacket.java
+END
+BinaryPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/BinaryPacket.java
+END
+HandshakePacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/HandshakePacket.java
+END
+ErrorPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/ErrorPacket.java
+END
+PreparedOkPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/PreparedOkPacket.java
+END
+PingPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/PingPacket.java
+END
+HeartbeatPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/HeartbeatPacket.java
+END
+AuthPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/AuthPacket.java
+END
+RowDataPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/RowDataPacket.java
+END
+ExecutePacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/ExecutePacket.java
+END
+ResultSetHeaderPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/ResultSetHeaderPacket.java
+END
+MySQLPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/10/trunk/cobar-net/src/main/java/com/alibaba/cobar/net/mysql/MySQLPacket.java
+END

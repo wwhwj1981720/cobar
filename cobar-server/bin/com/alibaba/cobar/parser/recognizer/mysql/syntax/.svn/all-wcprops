@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax
+END
+MySQLDMLParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLParserTest.java
+END
+MySQLDMLSelectParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLSelectParserTest.java
+END
+MySQLExprParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLExprParserTest.java
+END
+MySQLDMLDeleteParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLDeleteParserTest.java
+END
+MySQLDMLUpdateParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLUpdateParserTest.java
+END
+MySQLDALParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDALParserTest.java
+END
+MySQLDMLInsertParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLInsertParserTest.java
+END
+MySQLDDLParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDDLParserTest.java
+END
+MySQLMTSParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLMTSParserTest.java
+END
+SoloParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/SoloParser.java
+END
+AbstractSyntaxTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/AbstractSyntaxTest.java
+END
+MySQLDMLCallParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLCallParserTest.java
+END
+MySQLDMLReplaceParserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/parser/recognizer/mysql/syntax/MySQLDMLReplaceParserTest.java
+END

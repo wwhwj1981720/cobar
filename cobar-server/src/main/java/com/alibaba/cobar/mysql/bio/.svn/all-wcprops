@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/bio
+END
+ChannelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/bio/ChannelFactory.java
+END
+MySQLChannelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/bio/MySQLChannelFactory.java
+END
+Channel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/bio/Channel.java
+END
+MySQLChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/bio/MySQLChannel.java
+END

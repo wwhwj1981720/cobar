@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc
+END
+UrlConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/UrlConnection.java
+END
+Driver.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/Driver.java
+END
+CobarNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/CobarNode.java
+END
+UrlProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/UrlProvider.java
+END

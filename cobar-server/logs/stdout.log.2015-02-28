@@ -1,0 +1,549 @@
+15:51:15,921 INFO  ===============================================
+15:51:15,921 INFO  Cobar is ready to startup ...
+15:51:15,921 INFO  Startup processors ...
+15:51:16,578 INFO  Startup connector ...
+15:51:16,609 INFO  Initialize dataNodes ...
+15:51:26,781 WARN  dnTest1:0 init error.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:228)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+15:51:26,796 ERROR #!Cobar#dnTest1 init failure
+15:51:34,718 INFO  dnTest3:0 init success
+15:51:35,843 INFO  dnTest2:0 init success
+15:51:36,687 INFO  dnTest4:0 init success
+15:51:36,765 INFO  CobarManager is started and listening on 9066
+15:51:36,812 INFO  CobarServer is started and listening on 8066
+15:51:36,828 INFO  ===============================================
+16:00:24,687 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]'test' login success
+16:00:39,250 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:01:05,687 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:01:10,796 WARN  [thread=Processor1-E0,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:01:12,656 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=4861,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:01:20,546 INFO  [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1083,schema=dbtest]'test' login success
+16:01:31,109 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1083,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:01:42,875 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1083,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:01:45,593 WARN  [thread=Processor2-E0,class=ServerConnection,host=127.0.0.1,port=1083,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:01:47,671 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=1083,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:02:18,765 INFO  [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=1100,schema=dbtest]'test' login success
+16:02:26,171 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1100,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:02:37,375 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1100,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:02:40,781 WARN  [thread=Processor3-E0,class=ServerConnection,host=127.0.0.1,port=1100,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:02:42,828 DEBUG [thread=Processor3-R,class=ServerConnection,host=127.0.0.1,port=1100,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:02:52,984 INFO  [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=1108,schema=dbtest]'test' login success
+16:03:09,046 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1108,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:03:24,671 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1108,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:03:29,140 WARN  [thread=Processor0-E0,class=ServerConnection,host=127.0.0.1,port=1108,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:03:31,921 DEBUG [thread=Processor0-R,class=ServerConnection,host=127.0.0.1,port=1108,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:05:12,296 INFO  [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1141,schema=dbtest]'test' login success
+16:05:22,140 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1141,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:05:41,109 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1141,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:05:45,218 WARN  [thread=Processor1-E2,class=ServerConnection,host=127.0.0.1,port=1141,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:05:47,406 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=1141,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:05:57,312 INFO  [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1148,schema=dbtest]'test' login success
+16:06:09,484 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1148,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:06:26,187 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1148,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:06:29,843 WARN  [thread=Processor2-E2,class=ServerConnection,host=127.0.0.1,port=1148,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:06:32,156 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=1148,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:07:04,093 INFO  [thread=Processor3-H2,class=ServerConnection,host=127.0.0.1,port=1161,schema=dbtest]'test' login success
+16:07:14,703 DEBUG [thread=Processor3-H3,class=ServerConnection,host=127.0.0.1,port=1161,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:07:43,562 DEBUG [thread=Processor3-H3,class=ServerConnection,host=127.0.0.1,port=1161,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:07:46,468 WARN  [thread=Processor3-E2,class=ServerConnection,host=127.0.0.1,port=1161,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:07:47,828 DEBUG [thread=Processor3-R,class=ServerConnection,host=127.0.0.1,port=1161,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:07:55,468 INFO  [thread=Processor0-H2,class=ServerConnection,host=127.0.0.1,port=1173,schema=dbtest]'test' login success
+16:08:15,703 DEBUG [thread=Processor0-H3,class=ServerConnection,host=127.0.0.1,port=1173,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:08:39,046 DEBUG [thread=Processor0-H3,class=ServerConnection,host=127.0.0.1,port=1173,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:08:42,484 WARN  [thread=Processor0-E2,class=ServerConnection,host=127.0.0.1,port=1173,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:08:44,531 DEBUG [thread=Processor0-R,class=ServerConnection,host=127.0.0.1,port=1173,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:09:12,828 INFO  ===============================================
+16:09:12,828 INFO  Cobar is ready to startup ...
+16:09:12,828 INFO  Startup processors ...
+16:09:13,234 INFO  Startup connector ...
+16:09:13,234 INFO  Initialize dataNodes ...
+16:09:13,281 INFO  dnTest1:0 init success
+16:09:13,281 INFO  dnTest3:0 init success
+16:09:13,296 INFO  dnTest2:0 init success
+16:09:13,296 INFO  dnTest4:0 init success
+16:09:13,328 INFO  CobarManager is started and listening on 9066
+16:09:13,328 INFO  CobarServer is started and listening on 8066
+16:09:13,328 INFO  ===============================================
+16:09:42,218 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]'test' login success
+16:09:42,234 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:09:42,343 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:09:42,484 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]SHOW WARNINGS
+16:09:42,484 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:09:42,500 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:09:42,625 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:09:42,640 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]SHOW COLLATION
+16:09:42,640 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:09:42,656 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]SET character_set_results = NULL
+16:09:42,703 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]SET autocommit=1
+16:09:42,734 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]delete from tb2
+16:09:42,750 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]delete from tb2, route={
+   1 -> dnTest2.default{delete from tb2}
+   2 -> dnTest3.default{delete from tb2}
+   3 -> dnTest4.default{delete from tb2}
+}
+16:09:43,031 WARN  [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=1212,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:10:31,031 INFO  [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]'test' login success
+16:10:31,062 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:10:31,062 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:10:31,156 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]SHOW WARNINGS
+16:10:31,156 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:10:31,171 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:10:31,171 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:10:31,171 DEBUG [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]SHOW COLLATION
+16:10:31,171 DEBUG [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:10:31,203 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]SET character_set_results = NULL
+16:10:31,203 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]SET autocommit=1
+16:10:37,046 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]delete from tb2
+16:10:37,046 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]delete from tb2, route={
+   1 -> dnTest2.default{delete from tb2}
+   2 -> dnTest3.default{delete from tb2}
+   3 -> dnTest4.default{delete from tb2}
+}
+16:10:37,109 WARN  [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=1229,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:11:05,531 INFO  [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]'test' login success
+16:11:05,546 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:11:05,546 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:11:05,640 DEBUG [thread=Processor3-H2,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]SHOW WARNINGS
+16:11:05,640 DEBUG [thread=Processor3-H2,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:11:05,640 DEBUG [thread=Processor3-H3,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:11:05,656 DEBUG [thread=Processor3-H3,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:11:05,656 DEBUG [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]SHOW COLLATION
+16:11:05,656 DEBUG [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:11:05,671 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]SET character_set_results = NULL
+16:11:05,687 DEBUG [thread=Processor3-H2,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]SET autocommit=1
+16:11:05,718 DEBUG [thread=Processor3-H3,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]insert into tb2 (id,val) values (3071,'part2')
+16:11:05,812 DEBUG [thread=Processor3-H3,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]insert into tb2 (id,val) values (3071,'part2'), route={
+   1 -> dnTest4.default{insert into tb2 (id,val) values (3071,'part2')}
+}
+16:11:05,890 DEBUG [thread=Processor3-R,class=ServerConnection,host=127.0.0.1,port=1237,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:11:24,921 INFO  [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]'test' login success
+16:11:24,937 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:11:24,937 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:11:25,031 DEBUG [thread=Processor0-H2,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]SHOW WARNINGS
+16:11:25,031 DEBUG [thread=Processor0-H2,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:11:25,031 DEBUG [thread=Processor0-H3,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:11:25,031 DEBUG [thread=Processor0-H3,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:11:25,046 DEBUG [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]SHOW COLLATION
+16:11:25,046 DEBUG [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:11:25,062 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]SET character_set_results = NULL
+16:11:25,062 DEBUG [thread=Processor0-H2,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]SET autocommit=1
+16:11:25,109 DEBUG [thread=Processor0-H3,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]insert into tb2 (id,val) values (5000,'part2')
+16:11:25,109 DEBUG [thread=Processor0-H3,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]insert into tb2 (id,val) values (5000,'part2'), route={
+   1 -> dnTest2.default{insert into tb2 (id,val) values (5000,'part2')}
+}
+16:11:25,156 DEBUG [thread=Processor0-R,class=ServerConnection,host=127.0.0.1,port=1243,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:11:59,781 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]'test' login success
+16:11:59,796 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:11:59,796 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:11:59,890 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]SHOW WARNINGS
+16:11:59,890 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:11:59,890 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:11:59,890 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:11:59,890 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]SHOW COLLATION
+16:11:59,890 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:11:59,921 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]SET character_set_results = NULL
+16:11:59,921 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]SET autocommit=1
+16:11:59,953 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]insert into tb2 (id,val) values (50000,'part2')
+16:11:59,953 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]insert into tb2 (id,val) values (50000,'part2'), route={
+   1 -> dnTest2.default{insert into tb2 (id,val) values (50000,'part2')}
+}
+16:12:00,031 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=1255,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:12:54,593 INFO  ===============================================
+16:12:54,593 INFO  Cobar is ready to startup ...
+16:12:54,593 INFO  Startup processors ...
+16:12:54,937 INFO  Startup connector ...
+16:12:54,953 INFO  Initialize dataNodes ...
+16:13:04,984 WARN  dnTest1:0 init error.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:228)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.alibaba.cobar.mysql.bio.MySQLChannel.connect(MySQLChannel.java:186)
+	at com.alibaba.cobar.mysql.MySQLDataSource.getChannel(MySQLDataSource.java:160)
+	at com.alibaba.cobar.mysql.MySQLDataNode.initSource(MySQLDataNode.java:358)
+	at com.alibaba.cobar.mysql.MySQLDataNode.init(MySQLDataNode.java:79)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:129)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+16:13:05,000 ERROR #!Cobar#dnTest1 init failure
+16:13:09,406 INFO  dnTest3:0 init success
+16:13:09,406 INFO  dnTest2:0 init success
+16:13:09,421 INFO  dnTest4:0 init success
+16:13:09,453 INFO  CobarManager is started and listening on 9066
+16:13:09,468 INFO  CobarServer is started and listening on 8066
+16:13:09,468 INFO  ===============================================
+16:13:30,265 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1296,schema=dbtest]'test' login success
+16:13:41,734 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1296,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:13:50,593 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1296,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:13:53,343 WARN  [thread=Processor1-E0,class=ServerConnection,host=127.0.0.1,port=1296,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:13:55,765 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=1296,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:14:01,437 INFO  [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1300,schema=dbtest]'test' login success
+16:14:12,078 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1300,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:14:27,093 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1300,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:14:31,781 WARN  [thread=Processor2-E0,class=ServerConnection,host=127.0.0.1,port=1300,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:14:33,812 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=1300,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:15:30,578 INFO  [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=1320,schema=dbtest]'test' login success
+16:15:36,531 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1320,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:15:48,531 DEBUG [thread=Processor3-H1,class=ServerConnection,host=127.0.0.1,port=1320,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:15:51,375 WARN  [thread=Processor3-E0,class=ServerConnection,host=127.0.0.1,port=1320,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:15:52,921 DEBUG [thread=Processor3-R,class=ServerConnection,host=127.0.0.1,port=1320,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:15:57,390 INFO  [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=1323,schema=dbtest]'test' login success
+16:16:05,218 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1323,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:16:21,531 DEBUG [thread=Processor0-H1,class=ServerConnection,host=127.0.0.1,port=1323,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:16:22,953 WARN  [thread=Processor0-E0,class=ServerConnection,host=127.0.0.1,port=1323,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:16:24,046 DEBUG [thread=Processor0-R,class=ServerConnection,host=127.0.0.1,port=1323,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:17:24,812 INFO  [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1343,schema=dbtest]'test' login success
+16:17:48,218 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1343,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:18:02,218 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1343,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:18:04,046 WARN  [thread=Processor1-E2,class=ServerConnection,host=127.0.0.1,port=1343,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:18:10,593 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=1343,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:18:15,546 INFO  [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1350,schema=dbtest]'test' login success
+16:18:27,906 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1350,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:19:02,125 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1350,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:19:04,859 WARN  [thread=Processor2-E2,class=ServerConnection,host=127.0.0.1,port=1350,schema=dbtest]dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+java.lang.IllegalArgumentException: Invalid DataSource:0
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:190)
+	at com.alibaba.cobar.mysql.MySQLDataNode.getChannel(MySQLDataNode.java:178)
+	at com.alibaba.cobar.mysql.bio.executor.SingleNodeExecutor$2.run(SingleNodeExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+16:19:31,609 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=1350,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:25:40,421 INFO  ===============================================
+16:25:40,421 INFO  Cobar is ready to startup ...
+16:25:40,421 INFO  Startup processors ...
+16:25:40,781 INFO  Startup connector ...
+16:25:40,796 INFO  Initialize dataNodes ...
+16:25:40,859 INFO  dnTest1:0 init success
+16:25:40,875 INFO  dnTest3:0 init success
+16:25:40,875 INFO  dnTest2:0 init success
+16:25:40,875 INFO  dnTest4:0 init success
+16:25:40,921 INFO  CobarManager is started and listening on 9066
+16:25:40,937 INFO  CobarServer is started and listening on 8066
+16:25:40,937 INFO  ===============================================
+16:26:12,187 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]'test' login success
+16:26:21,437 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:26:49,484 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:27:17,968 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]SHOW WARNINGS
+16:27:28,828 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:27:41,968 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:28:01,953 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:28:21,328 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]SHOW COLLATION
+16:28:33,812 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:28:46,656 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]SET character_set_results = NULL
+16:28:57,531 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]SET autocommit=1
+16:29:22,968 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]delete from tb2
+16:34:32,234 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]delete from tb2, route={
+   1 -> dnTest2.default{delete from tb2}
+   2 -> dnTest3.default{delete from tb2}
+   3 -> dnTest4.default{delete from tb2}
+}
+16:42:35,187 WARN  [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=1505,schema=dbtest]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:206)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:160)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+16:43:00,500 INFO  [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]'test' login success
+16:43:12,062 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+16:43:29,328 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+16:43:45,500 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]SHOW WARNINGS
+16:44:08,593 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+16:44:24,171 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+16:44:40,500 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+16:45:53,671 DEBUG [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]SHOW COLLATION
+16:47:46,078 DEBUG [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+16:48:08,265 DEBUG [thread=Processor2-H1,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]SET character_set_results = NULL
+16:48:18,171 DEBUG [thread=Processor2-H2,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]SET autocommit=1
+16:48:35,171 DEBUG [thread=Processor2-H3,class=ServerConnection,host=127.0.0.1,port=1667,schema=dbtest]insert into tb2 (id,val) values (50000,'part2')

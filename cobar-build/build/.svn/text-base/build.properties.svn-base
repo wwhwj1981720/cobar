@@ -1,0 +1,15 @@
+repository.version=unknow
+build.version=unknow
+product.version=${version}
+product.release.type=D
+product.release.date=201003300000
+#版本相关配置
+version=${version.major}.${version.minor}
+version.minor=0
+version.major=1
+#编译相关配置
+compile.debug=true
+compile.source=1.6
+compile.target=1.6
+compile.debug.level=source,lines,vars
+compile.encoding=utf-8

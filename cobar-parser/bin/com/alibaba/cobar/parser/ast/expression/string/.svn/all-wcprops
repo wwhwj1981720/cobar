@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/string
+END
+SoundsLikeExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/string/SoundsLikeExpression.java
+END
+LikeExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/string/LikeExpression.java
+END
+RegexpExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/string/RegexpExpression.java
+END

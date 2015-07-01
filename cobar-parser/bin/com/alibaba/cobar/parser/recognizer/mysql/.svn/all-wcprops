@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/recognizer/mysql
+END
+MySQLFunctionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/recognizer/mysql/MySQLFunctionManager.java
+END
+MySQLToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/recognizer/mysql/MySQLToken.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl
+END
+DDLCreateIndexStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLCreateIndexStatement.java
+END
+DDLCreateTableStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLCreateTableStatement.java
+END
+DDLDropIndexStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLDropIndexStatement.java
+END
+DDLDropTableStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLDropTableStatement.java
+END
+DDLAlterTableStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLAlterTableStatement.java
+END
+DDLRenameTableStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLRenameTableStatement.java
+END
+DDLStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLStatement.java
+END
+DescTableStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DescTableStatement.java
+END
+DDLTruncateStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/stmt/ddl/DDLTruncateStatement.java
+END

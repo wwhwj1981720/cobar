@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/conf
+END
+schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/conf/schema.xml
+END
+server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/conf/server.xml
+END
+rule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/conf/rule.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/cloud-cobar/!svn/ver/3/trunk/cobar-build/resources/server/conf/log4j.xml
+END

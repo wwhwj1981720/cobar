@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="cobar-driver" default="build" basedir=".">
+	<!--
+	  cobar-driver构建说明：
+	  1. 初始化构建环境，target:init
+	  2. 执行编译，包括src编译和ext编译，target:compile
+	  3. 拷贝各种资源至对应的标准目录，target:copy
+	  4. 构建插件jar包，target:jar
+	  -->
+	<property name="unitbuild" value="../../cobar-build" />
+	<property name="unitbuild.resource" value="${unitbuild}/resources" />
+	<property name="unitbuild.resource.jars" value="${unitbuild.resource}/driver/jars" />
+
+	<property file="${unitbuild}/build/build.properties" />
+
+	<property name="src" value="../src/main/java" />
+	<property name="lib" value="../lib" />
+
+	<property name="dest" value="dest" />
+	<property name="dest.META-INF" value="${dest}/META-INF" />
+	<property name="export.dir" value="export/" />
+	<property name="export.jar-basename" value="cobar-driver" />
+	<property name="export.jar-name" value="${export.jar-basename}-${version}.jar" />
+
+	<!-- 构建时间 -->
+	<tstamp>
+		<format property="build.time" pattern="yyyyMMdd.HHmmss" />
+	</tstamp>
+
+	<!-- 插件工程源目录构建所需的ClassPath -->
+	<path id="src.compile.classpath">
+		<fileset dir="${lib}" />
+		<fileset dir="${unitbuild.resource.jars}" />
+	</path>
+
+	<!-- 构建初始清理、初始化 -->
+	<target name="init">
+		<delete dir="${dest}" />
+		<delete dir="${dest.META-INF}" />
+		<delete dir="${export.dir}" />
+		
+		<mkdir dir="${dest}" />
+		<mkdir dir="${dest.META-INF}" />
+		<mkdir dir="${export.dir}" />
+	</target>
+
+	<!-- 编译，包括src编译（暂时不包含test编译） -->
+	<target name="compile">
+		<javac debug="${compile.debug}" debuglevel="${compile.debug.level}" encoding="${compile.encoding}" 
+			   source="${compile.source}" target="${compile.target}" srcdir="${src}" destdir="${dest}">
+			<classpath refid="src.compile.classpath" />
+		</javac>
+	</target>
+
+	<!-- 资源复制 -->
+	<target name="copy">
+		<!-- copy class -->
+		<copy todir="${dest}" encoding="UTF-8">
+			<fileset dir="${src}" />
+		</copy>
+		
+		<delete dir="${dest}" >
+			<include name="**/*.java"/>
+		</delete>
+	</target>
+
+	<!-- 构建插件jar包 -->
+	<target name="jar">
+		<jar jarfile="${export.dir}${export.jar-name}" basedir="${dest}">
+			<manifest>
+				<attribute name="Product-Name" value="${product.name}" />
+				<attribute name="Product-Version" value="${product.version}" />
+				<attribute name="Build-Time" value="${build.time}" />
+				<attribute name="Build-Version" value="${build.version}" />
+				<attribute name="Repository-Version" value="${repository.version}" />
+			</manifest>
+		</jar>
+	</target>
+	
+	<!-- 构建完成清理 -->
+	<target name="complete-clean">
+		<delete dir="${dest}" />
+	</target>
+	
+	<!-- 拷贝资源 -->
+	<target name="copyToJars">
+		<delete file="${unitbuild.resource.jars}/${export.jar-name}" />
+		<copy todir="${unitbuild.resource.jars}" encoding="UTF-8">
+			<fileset dir="${export.dir}">
+				<include name="${export.jar-name}"/>
+			</fileset>
+			<fileset dir="${lib}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<delete dir="${export.dir}"></delete>
+	</target>
+
+	<!-- 主构建 -->
+	<target name="build">
+		<ant target="init" />
+		<ant target="compile" />
+		<ant target="copy" />
+		<ant target="jar" />
+		<ant target="complete-clean" />
+		<ant target="copyToJars" />
+	</target>
+</project>

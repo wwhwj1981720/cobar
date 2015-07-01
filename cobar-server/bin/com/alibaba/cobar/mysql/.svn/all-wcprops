@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql
+END
+MySQLDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/MySQLDataSource.java
+END
+MySQLDataNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/MySQLDataNode.java
+END
+PacketUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/main/java/com/alibaba/cobar/mysql/PacketUtil.java
+END

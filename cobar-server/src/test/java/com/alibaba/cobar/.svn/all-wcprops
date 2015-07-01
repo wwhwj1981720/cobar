@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/cloud-cobar/!svn/ver/22/trunk/cobar-server/src/test/java/com/alibaba/cobar
+END
+EchoBioServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/EchoBioServer.java
+END
+VolatileTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/VolatileTest.java
+END
+BufferPerformanceMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/BufferPerformanceMain.java
+END
+ExecutorTestMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/ExecutorTestMain.java
+END
+ConfigInitializerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/8/trunk/cobar-server/src/test/java/com/alibaba/cobar/ConfigInitializerTest.java
+END

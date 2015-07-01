@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/logical
+END
+NegativeValueExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/logical/NegativeValueExpression.java
+END
+LogicalXORExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/logical/LogicalXORExpression.java
+END
+LogicalNotExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/logical/LogicalNotExpression.java
+END
+LogicalOrExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/logical/LogicalOrExpression.java
+END
+LogicalAndExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/logical/LogicalAndExpression.java
+END

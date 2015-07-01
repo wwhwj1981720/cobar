@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref
+END
+TableRefFactor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/TableRefFactor.java
+END
+AliasableTableReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/AliasableTableReference.java
+END
+Dual.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/Dual.java
+END
+StraightJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/StraightJoin.java
+END
+NaturalJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/NaturalJoin.java
+END
+TableReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/TableReference.java
+END
+TableReferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/TableReferences.java
+END
+IndexHint.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/IndexHint.java
+END
+InnerJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/InnerJoin.java
+END
+OuterJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/OuterJoin.java
+END
+SubqueryFactor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/fragment/tableref/SubqueryFactor.java
+END

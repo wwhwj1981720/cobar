@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util
+END
+ErrorPacketException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/ErrorPacketException.java
+END
+ByteUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/ByteUtil.java
+END
+SecurityUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/SecurityUtil.java
+END
+UnknownPacketException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/UnknownPacketException.java
+END
+Capabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/Capabilities.java
+END
+StreamUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/StreamUtil.java
+END
+MySQLMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cloud-cobar/!svn/ver/6/trunk/cobar-driver/src/main/java/com/alibaba/cobar/jdbc/util/MySQLMessage.java
+END

@@ -1,0 +1,61 @@
+14:00:32,687 INFO  ===============================================
+14:00:32,703 INFO  Cobar is ready to startup ...
+14:00:32,703 INFO  Startup processors ...
+14:00:33,140 INFO  Startup connector ...
+14:00:33,187 INFO  Initialize dataNodes ...
+14:00:33,937 INFO  dnTest1:0 init success
+14:00:33,968 INFO  dnTest3:0 init success
+14:00:33,984 INFO  dnTest2:0 init success
+14:00:34,015 INFO  dnTest5:0 init success
+14:00:34,031 INFO  dnTest4:0 init success
+14:00:34,093 INFO  CobarManager is started and listening on 9066
+14:00:34,109 INFO  CobarServer is started and listening on 8066
+14:00:34,109 INFO  ===============================================
+14:01:03,156 INFO  ===============================================
+14:01:03,156 INFO  Cobar is ready to startup ...
+14:01:03,156 INFO  Startup processors ...
+14:01:03,328 INFO  Startup connector ...
+14:01:03,328 INFO  Initialize dataNodes ...
+14:01:03,375 INFO  dnTest1:0 init success
+14:01:03,375 INFO  dnTest3:0 init success
+14:01:03,375 INFO  dnTest2:0 init success
+14:01:03,390 INFO  dnTest5:0 init success
+14:01:03,390 INFO  dnTest4:0 init success
+14:01:03,390 ERROR 2015-03-04 14:01:03 startup error
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:119)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:52)
+	at com.alibaba.cobar.net.NIOAcceptor.<init>(NIOAcceptor.java:52)
+	at com.alibaba.cobar.CobarServer.startup(CobarServer.java:138)
+	at com.alibaba.cobar.CobarStartup.main(CobarStartup.java:39)
+14:08:14,546 INFO  [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]'test' login success
+14:08:14,562 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+14:08:14,640 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect', route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'}
+}
+14:08:14,906 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]SHOW WARNINGS
+14:08:14,906 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]SHOW WARNINGS, route={
+   1 -> dnTest1.default{SHOW WARNINGS}
+}
+14:08:14,921 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+14:08:14,937 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment, route={
+   1 -> dnTest1.default{/* mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment}
+}
+14:08:14,937 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]SHOW COLLATION
+14:08:14,937 DEBUG [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]SHOW COLLATION, route={
+   1 -> dnTest1.default{SHOW COLLATION}
+}
+14:08:14,968 DEBUG [thread=Processor1-H1,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]SET character_set_results = NULL
+14:08:14,968 DEBUG [thread=Processor1-H2,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]SET autocommit=1
+14:08:14,984 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]insert into tb2 (id,val) values (5,'18611701625')
+14:08:15,015 DEBUG [thread=Processor1-H3,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]insert into tb2 (id,val) values (5,'18611701625'), route={
+   1 -> dnTest2.default{insert into tb2 (id,val) values (5,'18611701625')}
+}
+14:08:15,906 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=3432,schema=dbtest]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)

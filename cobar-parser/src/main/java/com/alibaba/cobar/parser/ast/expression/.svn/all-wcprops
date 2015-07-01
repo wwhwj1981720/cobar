@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression
+END
+Expression.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/Expression.java
+END
+BinaryOperatorExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/BinaryOperatorExpression.java
+END
+PolyadicOperatorExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/PolyadicOperatorExpression.java
+END
+TernaryOperatorExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/TernaryOperatorExpression.java
+END
+AbstractExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/AbstractExpression.java
+END
+ReplacableExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/ReplacableExpression.java
+END
+UnaryOperatorExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/UnaryOperatorExpression.java
+END

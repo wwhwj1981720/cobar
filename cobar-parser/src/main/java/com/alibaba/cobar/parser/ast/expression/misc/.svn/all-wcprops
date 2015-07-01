@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc
+END
+InExpressionList.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc/InExpressionList.java
+END
+QueryExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc/QueryExpression.java
+END
+SubqueryAnyExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc/SubqueryAnyExpression.java
+END
+AssignmentExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc/AssignmentExpression.java
+END
+SubqueryAllExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc/SubqueryAllExpression.java
+END
+UserExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/cloud-cobar/!svn/ver/5/trunk/cobar-parser/src/main/java/com/alibaba/cobar/parser/ast/expression/misc/UserExpression.java
+END

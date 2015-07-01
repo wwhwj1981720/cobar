@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/cobar-net"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/cobar-common"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/cobar-config"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/cobar-parser"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cobar-route"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

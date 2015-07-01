@@ -1,0 +1,39 @@
+14:19:19,093 INFO  ===============================================
+14:19:19,093 INFO  Cobar is ready to startup ...
+14:19:19,093 INFO  Startup processors ...
+14:19:19,655 INFO  Startup connector ...
+14:19:19,671 INFO  Initialize dataNodes ...
+14:19:19,811 INFO  dnTest1:0 init success
+14:19:19,827 INFO  dnTest3:0 init success
+14:19:19,827 INFO  dnTest2:0 init success
+14:19:19,874 INFO  CobarManager is started and listening on 9066
+14:19:19,905 INFO  CobarServer is started and listening on 8066
+14:19:19,905 INFO  ===============================================
+14:19:58,811 ERROR [thread=Processor1-H0,class=ServerConnection,host=127.0.0.1,port=2926,schema=null]Access denied for user 'test'
+14:19:58,827 DEBUG [thread=Processor1-R,class=ServerConnection,host=127.0.0.1,port=2926,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+14:19:58,843 ERROR [thread=Processor2-H0,class=ServerConnection,host=127.0.0.1,port=2927,schema=null]Access denied for user 'test'
+14:19:58,843 DEBUG [thread=Processor2-R,class=ServerConnection,host=127.0.0.1,port=2927,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+14:19:58,874 ERROR [thread=Processor3-H0,class=ServerConnection,host=127.0.0.1,port=2928,schema=null]Access denied for user 'test'
+14:19:58,874 DEBUG [thread=Processor3-R,class=ServerConnection,host=127.0.0.1,port=2928,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
+14:19:58,905 ERROR [thread=Processor0-H0,class=ServerConnection,host=127.0.0.1,port=2929,schema=null]Access denied for user 'test'
+14:19:58,905 DEBUG [thread=Processor0-R,class=ServerConnection,host=127.0.0.1,port=2929,schema=null]
+java.io.EOFException
+	at com.alibaba.cobar.net.AbstractConnection.read(AbstractConnection.java:163)
+	at com.alibaba.cobar.net.NIOReactor$R.read(NIOReactor.java:131)
+	at com.alibaba.cobar.net.NIOReactor$R.run(NIOReactor.java:99)
+	at java.lang.Thread.run(Thread.java:619)
